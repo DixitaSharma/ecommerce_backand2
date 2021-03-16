@@ -8,6 +8,17 @@ const app=express();
         res.send("we are best friends!!!!");
         res.end();
  })
+
+ app.get("/myname",(req,res,next)=>
+ {
+     res.status(200);
+     res.send({
+         name:"dixita"
+     })
+     res.end();
+
+ })
+
  const PORT=process.env.PORT || 4000
  //PROCESS IS AN OBJECT ENV IS A OBJECT AND PORT IS A VARIABLE
 
