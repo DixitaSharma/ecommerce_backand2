@@ -3,12 +3,14 @@ const app=express();
  app.get("/",(req,res,next)=>{
     res.end("we are friends!!!")
  })
- app.post("/dixita",(req,res,next)=>{
+ app.post("/ds",(req,res,next)=>{
         res.status(201);
         res.send("we are best friends!!!!");
         res.end();
  })
+ const PORT=process.env.PORT || 4000
+ //PROCESS IS AN OBJECT ENV IS A OBJECT AND PORT IS A VARIABLE
 
- app.listen(4000,()=>{
+ app.listen(PORT,()=>{
      return console.log("we are  using nodemon on  port 4000");
  });
