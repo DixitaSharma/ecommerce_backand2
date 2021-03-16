@@ -1,5 +1,8 @@
 const express=require('express');
+const cors=require('cors');
 const app=express();
+app.use(cors())
+// this use is used for all middleware
  app.get("/",(req,res,next)=>{
     res.end("we are friends!!!")
  })
